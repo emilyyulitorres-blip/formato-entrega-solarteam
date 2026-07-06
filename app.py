@@ -120,7 +120,7 @@ def generar_pdf(data, materiales):
     head.setStyle(TableStyle([("BOX",(0,0),(-1,-1),.8,colors.HexColor("#9AA4B2")),("VALIGN",(0,0),(-1,-1),"MIDDLE"),("ALIGN",(0,0),(-1,-1),"CENTER"),("PADDING",(0,0),(-1,-1),7)]))
     story += [head, Spacer(1,8)]
     qr = Image(generar_qr(data), width=2.2*cm, height=2.2*cm)
-    info = Table([[Paragraph(f"<b>Fecha:</b> {data['fecha']}",txt), Paragraph(f"<b>Hora:</b> {data['hora']}",txt), qr]], colWidths=[7*cm,7*cm,3.4*cm])
+    info = Table([[Paragraph(f"<b>Fecha:</b> {data['fecha']}",txt), qr]], colWidths=[7*cm,7*cm,3.4*cm])
     story += [info, Spacer(1,8)]
     s1 = Table([[Paragraph("DATOS GENERALES",sec)]], colWidths=[17.6*cm])
     s1.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,-1),colors.HexColor(PRIMARY)),("PADDING",(0,0),(-1,-1),5)]))

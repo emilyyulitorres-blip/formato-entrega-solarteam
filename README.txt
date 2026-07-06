@@ -1,24 +1,10 @@
-FORMULARIO DE ENTREGA Y RECEPCIÓN SOLARTEAM - INTERFAZ MODERNA
+Formulario SolarTeam actualizado
 
-Incluye:
-- Interfaz similar al mockup aprobado.
-- Menú lateral con logo.
-- Formulario en dos columnas.
-- Vista previa visual del PDF.
-- Historial inferior.
-- Exportación a Excel.
-- PDF profesional con QR.
-- Numeración automática ER-ST-001.
-- Campo transportista.
-- Sin serie/modelo.
-- Sin fecha de creación visible.
-- Sin fotos.
-- Sin inventario.
-
-Cómo ejecutar:
-1. Descomprime este ZIP.
-2. Abre una terminal en la carpeta.
-3. Instala dependencias:
-   pip install -r requirements.txt
-4. Ejecuta:
-   streamlit run app.py
+Cambios:
+- Nuevo logo verde incluido como logo.png.
+- Encabezado mejorado para que el título no se corte.
+- Título dentro de una tarjeta superior limpia.
+- N° documento visible en el encabezado.
+- Material / Equipo como texto libre para copiar y pegar desde Excel.
+- Equipo responsable en recepción.
+- Sin cargo en entrega.
